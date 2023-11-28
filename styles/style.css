@@ -1,0 +1,272 @@
+:root {
+  --black-bg: #131313;
+  --gray-bg: #343434;
+  --yellow-bg: #fee42a;
+  --text-gray: #cccccc;
+  --text-light: #f5f5f5;
+}
+
+.page {
+  background-color: #1e1e1e;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+
+.content-section_theme_dark {
+  background: var(--black-bg, #131313);
+  color: var(--text-light, #f5f5f5);
+}
+
+.content-section_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+  color: var(--black-bg, #131313);
+}
+
+/* --------------------------------header------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 20px;
+}
+
+.header__logo {
+  display: block;
+  width: 78px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.header__menu-item_active .header__menu-link {
+  border-bottom: none;
+}
+
+.header__menu-link {
+  color: var(--text-light, #f5f5f5);
+  font-size: 16px;
+  line-height: 1.2; /* 120%; 19.2px;  */
+  border-bottom: 1px solid var(--text-light, #f5f5f5);
+  text-decoration: none;
+}
+
+/* --------------------------------cover------------------------------- */
+
+.cover {
+  min-height: 258px;
+  padding: 7px 24px 32px 20px;
+  background-image: url('../images/cover.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% auto;
+}
+
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font-family: 'EB Garamond', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1; /* 100%; 72px */
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* --------------------------------intro------------------------------- */
+.intro {
+  padding: 0 20px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--text-gray, #ccc);
+}
+
+.intro__title {
+  font-size: 16px;
+  line-height: 1.2; /* 120%; 19.2px */
+}
+
+.intro__date {
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1.2; /* 120%; 19.2px */
+}
+
+.intro__main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 1.35; /* 135%; 21.6px; */
+}
+
+/* --------------------------------reasons------------------------------- */
+.reasons {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.content-section__subtitle {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.15; /* 115%; 32.2px */
+}
+
+.content-section__introduction {
+  font-size: 20px;
+  line-height: 1.35; /* 135%; 27px;*/
+}
+
+.content-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 0 14px;
+  font-size: 16px;
+  line-height: 1.35; /* 135%; 27px;*/
+}
+
+.content-section__list-item {
+  font-size: 16px;
+  line-height: 1.35; /* 135%; 21.6px;*/
+}
+
+.content-section__list-accent {
+  font-weight: 700;
+}
+
+/* --------------------------------how-to------------------------------- */
+.how-to {
+  padding: 40px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cards-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card_theme_dark {
+  background: var(--gray-bg, #343434);
+  color: var(--text-light, #f5f5f5);
+}
+
+.card_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+  color: var(--black-bg, #131313);
+}
+
+.card__author {
+  margin: 0 0 8px;
+}
+
+.card__author-photo {
+  display: block;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 0 8px;
+}
+
+.card__author-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35; /* 135%; 21.6px */
+}
+
+.card__title {
+  margin: 0 0 8px;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35; /* 135%; 29.7px */
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.35; /* 135%; 21.6px;*/
+}
+
+/* --------------------------------footer------------------------------- */
+.footer {
+  padding: 20px;
+  border-top: 1px solid var(--yellow-bg, #fee42a);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.35; /* 135%; 21.6px */
+}
+
+.footer__links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 14px;
+  line-height: 1.25; /* 125%; 17.5px */
+}
